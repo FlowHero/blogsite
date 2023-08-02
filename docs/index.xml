@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on My New Hugo Site</title>
+    <link>https://FlowHero.github.io/blogsite/docs/</link>
+    <description>Recent content in Docs on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Aug 2023 20:53:26 +0100</lastBuildDate><atom:link href="https://FlowHero.github.io/blogsite/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://FlowHero.github.io/blogsite/docs/test/</link>
+      <pubDate>Wed, 02 Aug 2023 20:53:26 +0100</pubDate>
+      
+      <guid>https://FlowHero.github.io/blogsite/docs/test/</guid>
+      <description>DVGA Use the following script to install &amp;amp; run DVGA :
+git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git &amp;amp;&amp;amp; cd Damn-Vulnerable-GraphQL-Application docker build -t dvga . docker run -d -t -p 5013:5013 -e WEB_HOST=0.0.0.0 --name dvga dvga Tools : nmap graphql-introspection nmap --script=graphql-introspection -sV 127.0.0.1 -p 5013 Altair InQL SQLmap graphw00f GraphQL running ? What Endpoint ? What GraphQL Engine ? Attack Surface ? python3 main.py -d -f -t http://127.0.0.1:5013 ffuf -u http://localhost/FUZZ -w /home/hero/tools/graphql-tools/endpoints.</description>
+    </item>
+    
+  </channel>
+</rss>
