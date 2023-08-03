@@ -8,13 +8,23 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Aug 2023 20:53:26 +0100</lastBuildDate><atom:link href="https://FlowHero.github.io/blogsite/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
+      <title>Attacking GraphQL</title>
+      <link>https://FlowHero.github.io/blogsite/docs/graphql-exploitation/</link>
+      <pubDate>Wed, 02 Aug 2023 20:53:26 +0100</pubDate>
+      
+      <guid>https://FlowHero.github.io/blogsite/docs/graphql-exploitation/</guid>
+      <description>I - DVGA Use the following script to install &amp;amp; run DVGA :
+git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git &amp;amp;&amp;amp; cd Damn-Vulnerable-GraphQL-Application docker build -t dvga . docker run -d -t -p 5013:5013 -e WEB_HOST=0.0.0.0 --name dvga dvga II - Toolkits nmap graphql-introspection Altair InQL SQLmap graphw00f III - Recon is GraphQL running ? What Endpoint ? What GraphQL Engine ? Attack Surface ? We can answer all these question using graphw00f :</description>
+    </item>
+    
+    <item>
+      <title>Attacking GraphQL</title>
       <link>https://FlowHero.github.io/blogsite/docs/test/</link>
       <pubDate>Wed, 02 Aug 2023 20:53:26 +0100</pubDate>
       
       <guid>https://FlowHero.github.io/blogsite/docs/test/</guid>
-      <description>DVGA Use the following script to install &amp;amp; run DVGA :
-git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git &amp;amp;&amp;amp; cd Damn-Vulnerable-GraphQL-Application docker build -t dvga . docker run -d -t -p 5013:5013 -e WEB_HOST=0.0.0.0 --name dvga dvga Tools : nmap graphql-introspection nmap --script=graphql-introspection -sV 127.0.0.1 -p 5013 Altair InQL SQLmap graphw00f GraphQL running ? What Endpoint ? What GraphQL Engine ? Attack Surface ? python3 main.py -d -f -t http://127.0.0.1:5013 ffuf -u http://localhost/FUZZ -w /home/hero/tools/graphql-tools/endpoints.</description>
+      <description>I - DVGA Use the following script to install &amp;amp; run DVGA :
+git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git &amp;amp;&amp;amp; cd Damn-Vulnerable-GraphQL-Application docker build -t dvga . docker run -d -t -p 5013:5013 -e WEB_HOST=0.0.0.0 --name dvga dvga II - Toolkits nmap graphql-introspection Altair InQL SQLmap graphw00f III - Recon is GraphQL running ? What Endpoint ? What GraphQL Engine ? Attack Surface ? We can answer all these question using graphw00f :</description>
     </item>
     
   </channel>
