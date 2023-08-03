@@ -13,18 +13,7 @@
       <pubDate>Wed, 02 Aug 2023 20:53:26 +0100</pubDate>
       
       <guid>https://FlowHero.github.io/blogsite/docs/graphql-exploitation/</guid>
-      <description>I - DVGA Use the following script to install &amp;amp; run DVGA :
-git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git &amp;amp;&amp;amp; cd Damn-Vulnerable-GraphQL-Application docker build -t dvga . docker run -d -t -p 5013:5013 -e WEB_HOST=0.0.0.0 --name dvga dvga II - Toolkits nmap graphql-introspection Altair InQL SQLmap graphw00f III - Recon is GraphQL running ? What Endpoint ? What GraphQL Engine ? Attack Surface ? We can answer all these question using graphw00f :</description>
-    </item>
-    
-    <item>
-      <title>Attacking GraphQL</title>
-      <link>https://FlowHero.github.io/blogsite/docs/test/</link>
-      <pubDate>Wed, 02 Aug 2023 20:53:26 +0100</pubDate>
-      
-      <guid>https://FlowHero.github.io/blogsite/docs/test/</guid>
-      <description>I - DVGA Use the following script to install &amp;amp; run DVGA :
-git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git &amp;amp;&amp;amp; cd Damn-Vulnerable-GraphQL-Application docker build -t dvga . docker run -d -t -p 5013:5013 -e WEB_HOST=0.0.0.0 --name dvga dvga II - Toolkits nmap graphql-introspection Altair InQL SQLmap graphw00f III - Recon is GraphQL running ? What Endpoint ? What GraphQL Engine ? Attack Surface ? We can answer all these question using graphw00f :</description>
+      <description>Get started with GraphQL testing from Recon to Exploitation !</description>
     </item>
     
   </channel>
