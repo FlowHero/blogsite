@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>API Hacking on FlowHero&#39;s Blogs</title>
-    <link>https://FlowHero.github.io/blogsite/tags/api-hacking/</link>
+    <link>https://flowhero.github.io/blogsite/tags/api-hacking/</link>
     <description>Recent content in API Hacking on FlowHero&#39;s Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2023 20:53:26 +0100</lastBuildDate><atom:link href="https://FlowHero.github.io/blogsite/tags/api-hacking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 00:15:21 +0100</lastBuildDate><atom:link href="https://flowhero.github.io/blogsite/tags/api-hacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bypassing WAFs</title>
+      <link>https://flowhero.github.io/blogsite/docs/bypassing-wafs/</link>
+      <pubDate>Sat, 05 Aug 2023 00:15:21 +0100</pubDate>
+      
+      <guid>https://flowhero.github.io/blogsite/docs/bypassing-wafs/</guid>
+      <description>Have you ever been blocked by a webserver that you are performing pentesting on ? Check out the best techniques used Bypass WAFs and perform your Bug Hunting/ Pentesting without obstacles !</description>
+    </item>
+    
     <item>
       <title>Attacking GraphQL</title>
-      <link>https://FlowHero.github.io/blogsite/docs/graphql-exploitation/</link>
+      <link>https://flowhero.github.io/blogsite/docs/graphql-exploitation/</link>
       <pubDate>Wed, 02 Aug 2023 20:53:26 +0100</pubDate>
       
-      <guid>https://FlowHero.github.io/blogsite/docs/graphql-exploitation/</guid>
+      <guid>https://flowhero.github.io/blogsite/docs/graphql-exploitation/</guid>
       <description>Get started with GraphQL testing from Recon to Exploitation !</description>
     </item>
     
