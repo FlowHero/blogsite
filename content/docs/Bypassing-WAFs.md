@@ -1,7 +1,9 @@
 ---
 title: "Bypassing WAFs"
 date: 2023-08-05T00:15:21+01:00
-draft: true
+draft: false
+summary: Have you ever been blocked by a webserver that you are performing pentesting on ? Check out the best techniques used Bypass WAFs and perform your Bug Hunting/ Pentesting without obstacles !
+tags: ["Web Hacking","API Hacking", "Bug Bounty"]
 ---
 
 ## I - Toolkits
@@ -137,7 +139,7 @@ Content-Length: 61
 - Let's say we can bypass WAF by The following rule , we can apply it then start fuzzing for passwords or whatso
 
 - Rules are applied from **TOP** to **BOTTOM** , in this example , suffix and prefix are added after encoding so they are not encoded.
-![[2023_08_01_004051.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_004051.png)
 
 - `Wfuzz` [Usage](https://wfuzz.readthedocs.io/en/latest/user/advanced.html#iterators-combining-payloads)
 
@@ -159,11 +161,11 @@ wfuzz -z list,1-2-3,md5-sha1-none http://webscantest.com/FUZZ
 
 Sometimes there could be some some *Subdomains* and/or *endpoints* that are protected by WAF : 
 
-![[2023_08_03_110036.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_03_110036.png)
 
 A very common way to bypass this is by using the IP Address instead of the domain , we can get the IP by using `Shodan` extension
 
-![[2023_08_03_110452.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_03_110452.png)
 
 But this IP is provided by a CDN (Cloudflare in this example), so it's used by more that one host. Thus, we need to test all active ports until we find which one maps to the website we are testing.
 
@@ -180,7 +182,7 @@ curl ip:port/protected/endpoint  => Success 200
 
 CDNs **sometimes** blocks access by IP Address to protect from this bypass technique
 
-![[2023_08_03_111118.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_03_111118.png)
 ### 6 - Rate Limits Testing
 
 - API providers may include its rate limiting details publicly on its website or in API documentation. 
@@ -204,7 +206,7 @@ Let's say `Rate limit  = 15 000 Request/min`
 *-t* option allows you to specify the concurrent **number of connections**, 
 *-s* option allows you to specify a **time delay** between requests.
 
-![[2023_08_01_010914.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_010914.png)
 
 
 This will send `12 000 Request/min`
@@ -216,7 +218,7 @@ Or use Burp *Intruder*/*Ressource Pool*
 
 |                                            |     |
 | ------------------------------------------ | --- |
-| ![[2023_08_01_011645.png]] | ![[2023_08_01_011508.png]]    |
+| ![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_011645.png) | ![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_011508.png)    |
 
 #### 6.2 - Path Bypass
 
@@ -272,7 +274,7 @@ You’ll know you’ve succeeded if an `x-rate-limit` header **resets** or if yo
 
 If WAF Blocks IP, Use *IP Rotate* **Burp Extension**
 
-![[2023_08_01_122633.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_122633.png)
 
 - Install *boto3*
 
@@ -284,23 +286,23 @@ pip3 install boto3
 - Install *IP Rotate*
 
 - *Add User* in aws -> IAM
-![[2023_08_01_123117.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_123117.png)
 
-![[2023_08_01_123340.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_123340.png)
 
 
-![[2023_08_01_123417.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_123417.png)
 
 
 Create User
 
-![[2023_08_01_123526.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_123526.png)
 
 Download *CSV file* containing your user’s **access key** and **secret access key**.
 
 In Burp :
 
-![[2023_08_01_124007.png]]
+![image](https://flowhero.github.io/assets/images/shemas/2023_08_01_124007.png)
 
 *Save Keys* => *Enable* 
 

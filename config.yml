@@ -1,4 +1,4 @@
-baseURL: 'https://FlowHero.github.io/blogsite/'
+baseURL: "https://flowhero.github.io/blogsite/"
 languageCode: en-us
 title: FlowHero's Blogs
 theme: fuji
