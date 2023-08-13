@@ -6,7 +6,16 @@
     <description>Recent content in Docs on FlowHero&#39;s Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Aug 2023 00:15:21 +0100</lastBuildDate><atom:link href="https://flowhero.github.io/blogsite/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Aug 2023 11:47:29 +0100</lastBuildDate><atom:link href="https://flowhero.github.io/blogsite/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JWTs Attacks Cheat-Sheet</title>
+      <link>https://flowhero.github.io/blogsite/docs/jwts-attacks/</link>
+      <pubDate>Sun, 13 Aug 2023 11:47:29 +0100</pubDate>
+      
+      <guid>https://flowhero.github.io/blogsite/docs/jwts-attacks/</guid>
+      <description>Explore the most common JWTs Attacks !</description>
+    </item>
+    
     <item>
       <title>Bypassing WAFs</title>
       <link>https://flowhero.github.io/blogsite/docs/bypassing-wafs/</link>
