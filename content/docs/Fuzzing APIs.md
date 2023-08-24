@@ -24,7 +24,7 @@ API fuzzing is the process of sending requests with various types of input to an
 
 Here's an example of modifying a key in a JSON data on a POST request , which let the server to reveal a SQL Syntax Error.
 
-![[sqlattemptt.png]]
+![image](https://flowhero.github.io/assets/images/shemas/sqlattemptt.png)
 
 Your input could include 
 - Symbols, 
